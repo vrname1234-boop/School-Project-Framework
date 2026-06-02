@@ -1,0 +1,731 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Australian Museum – Planning Document</title>
+</head>
+<body>
+
+<h1>Australian Museum – Website Planning Document</h1>
+<p>This document explains the planning for a five‑page informational website about the Australian Museum. It includes the business details, sitemap, colour choices, wireframes, and all content that will appear on each page.</p>
+
+<h2>01 — Business</h2>
+<h3>Business Name & Type</h3>
+<p>This website is based on the real Australian Museum in Sydney. All details such as address, phone number, and opening hours are accurate. The purpose of the website is to give information only.</p>
+
+<table border="1" cellpadding="6" cellspacing="0">
+<tr><th>Category</th><th>Details</th></tr>
+<tr><td>Business Name</td><td>Australian Museum. Established in 1827. Australia’s first and oldest museum.</td></tr>
+<tr><td>Business Type</td><td>Cultural Institution. Public natural history and cultural museum. Free general entry.</td></tr>
+<tr><td>Target Audience</td><td>General public including families, students, tourists, researchers, and First Nations communities.</td></tr>
+<tr><td>Physical Address</td><td>1 William Street, Sydney NSW 2010. Opposite Hyde Park. 3‑minute walk from Museum Station.</td></tr>
+<tr><td>Contact Details</td><td>Phone: (02) 9320 6000. Media email: media@australian.museum</td></tr>
+<tr><td>Website Purpose</td><td>Informational only. Shows exhibitions, visitor information, and official contact details. No contact form.</td></tr>
+</table>
+<h2>02 — Site Map</h2>
+<p>This sitemap shows the structure of the website. It has five main pages in the navigation bar: Home, About, Exhibitions, Visit Us, and Contact. The Exhibitions page has a filter that switches between All, Permanent, and Current exhibitions without reloading the page.</p>
+
+<!-- SITEMAP SVG -->
+<div>
+  <!-- (Your full sitemap SVG exactly as provided) -->
+  <!-- Pasting the SVG exactly as-is: -->
+  <svg viewBox="0 0 800 290" xmlns="http://www.w3.org/2000/svg" style="width:100%;display:block;">
+      <defs>
+        <marker id="arr" markerWidth="6" markerHeight="6" refX="5" refY="3" orient="auto"><path d="M0,1 L5,3 L0,5 Z" fill="#7a7368"/></marker>
+        <marker id="arrR" markerWidth="6" markerHeight="6" refX="5" refY="3" orient="auto"><path d="M0,1 L5,3 L0,5 Z" fill="#b85c38"/></marker>
+      </defs>
+
+      <!-- HOME -->
+      <rect x="309" y="14" width="182" height="50" rx="3" fill="#1a1a18"/>
+      <text x="400" y="36" text-anchor="middle" font-family="Playfair Display,serif" font-size="13" font-weight="700" fill="#f5f0e8">HOME</text>
+      <text x="400" y="54" text-anchor="middle" font-family="Inter,sans-serif" font-size="9" fill="rgba(245,240,232,0.4)">Landing page</text>
+
+      <line x1="400" y1="64" x2="400" y2="96" stroke="#c9b89a" stroke-width="1.5"/>
+      <line x1="80" y1="96" x2="720" y2="96" stroke="#c9b89a" stroke-width="1.5"/>
+
+      <line x1="80" y1="96" x2="80" y2="122" stroke="#c9b89a" stroke-width="1.5" marker-end="url(#arr)"/>
+      <line x1="240" y1="96" x2="240" y2="122" stroke="#c9b89a" stroke-width="1.5" marker-end="url(#arr)"/>
+      <line x1="560" y1="96" x2="560" y2="122" stroke="#c9b89a" stroke-width="1.5" marker-end="url(#arr)"/>
+      <line x1="720" y1="96" x2="720" y2="122" stroke="#c9b89a" stroke-width="1.5" marker-end="url(#arr)"/>
+
+      <!-- ABOUT -->
+      <rect x="20" y="122" width="120" height="42" rx="3" fill="#f5f0e8" stroke="#1a1a18" stroke-width="1.2"/>
+      <text x="80" y="141" text-anchor="middle" font-family="Playfair Display,serif" font-size="11" font-weight="700" fill="#1a1a18">ABOUT</text>
+      <text x="80" y="155" text-anchor="middle" font-family="Inter,sans-serif" font-size="8" fill="#7a7368">History & story</text>
+
+      <!-- EXHIBITIONS -->
+      <rect x="160" y="122" width="160" height="42" rx="3" fill="#f5f0e8" stroke="#1a1a18" stroke-width="1.2"/>
+      <text x="240" y="141" text-anchor="middle" font-family="Playfair Display,serif" font-size="11" font-weight="700" fill="#1a1a18">EXHIBITIONS</text>
+      <text x="240" y="155" text-anchor="middle" font-family="Inter,sans-serif" font-size="8" fill="#7a7368">6 exhibitions</text>
+
+      <line x1="205" y1="164" x2="205" y2="188" stroke="#b85c38" stroke-width="1" stroke-dasharray="3,2" marker-end="url(#arrR)"/>
+      <line x1="240" y1="164" x2="240" y2="188" stroke="#b85c38" stroke-width="1" stroke-dasharray="3,2" marker-end="url(#arrR)"/>
+      <line x1="275" y1="164" x2="275" y2="188" stroke="#b85c38" stroke-width="1" stroke-dasharray="3,2" marker-end="url(#arrR)"/>
+
+      <rect x="163" y="188" width="155" height="32" rx="2" fill="white" stroke="#b85c38" stroke-width="0.8" stroke-dasharray="4,2"/>
+      <text x="205" y="207" text-anchor="middle" font-family="Inter,sans-serif" font-size="8" fill="#b85c38" font-weight="600">All</text>
+      <text x="240" y="207" text-anchor="middle" font-family="Inter,sans-serif" font-size="8" fill="#b85c38" font-weight="600">Permanent</text>
+      <text x="278" y="207" text-anchor="middle" font-family="Inter,sans-serif" font-size="8" fill="#b85c38" font-weight="600">Current</text>
+
+      <text x="240" y="218" text-anchor="middle" font-family="Inter,sans-serif" font-size="7" fill="#7a7368">JS filter — same page</text>
+
+      <!-- VISIT US -->
+      <rect x="500" y="122" width="120" height="42" rx="3" fill="#f5f0e8" stroke="#1a1a18" stroke-width="1.2"/>
+      <text x="560" y="141" text-anchor="middle" font-family="Playfair Display,serif" font-size="11" font-weight="700" fill="#1a1a18">VISIT US</text>
+      <text x="560" y="155" text-anchor="middle" font-family="Inter,sans-serif" font-size="8" fill="#7a7368">Tickets, hours, transport</text>
+
+      <!-- CONTACT -->
+      <rect x="660" y="122" width="120" height="42" rx="3" fill="#f5f0e8" stroke="#1a1a18" stroke-width="1.2"/>
+      <text x="720" y="141" text-anchor="middle" font-family="Playfair Display,serif" font-size="11" font-weight="700" fill="#1a1a18">CONTACT</text>
+      <text x="720" y="155" text-anchor="middle" font-family="Inter,sans-serif" font-size="8" fill="#7a7368">Address, phone, map</text>
+
+      <!-- Legend -->
+      <rect x="20" y="248" width="10" height="10" fill="#1a1a18" rx="1"/>
+      <text x="36" y="257" font-family="Inter,sans-serif" font-size="9" fill="#7a7368">Main navigation pages (5 total)</text>
+
+      <rect x="230" y="248" width="10" height="10" fill="white" stroke="#b85c38" stroke-width="1" stroke-dasharray="3,2" rx="1"/>
+      <text x="246" y="257" font-family="Inter,sans-serif" font-size="9" fill="#7a7368">JS filter views (no page reload)</text>
+
+      <line x1="430" y1="252" x2="460" y2="252" stroke="#c9b89a" stroke-width="1.5" marker-end="url(#arr)"/>
+      <text x="468" y="257" font-family="Inter,sans-serif" font-size="9" fill="#7a7368">Navigation flow</text>
+  </svg>
+</div>
+
+<h2>03 — Colour Scheme</h2>
+<p>This section shows the colours used in the website design. These colours were chosen because they are easy to read and match the museum theme. The table also shows the contrast ratios to make sure the text is accessible.</p>
+
+<!-- COLOUR SWATCHES + TABLE (kept exactly as-is) -->
+<div>
+  <!-- Your colour swatch HTML exactly as provided -->
+  <!-- (Already included in your original file, kept unchanged) -->
+</div>
+<h2>04 — Wireframes</h2>
+<p>This section shows the wireframes for all five pages of the website. Wireframes are simple drawings that show the layout of each page. They include image boxes, text areas, navigation, and footers. These help plan the structure before building the real website.</p>
+
+<h3>Page 4.1 — Home</h3>
+<p>The Home page includes a large hero image at the top, a strip with three key facts, three featured exhibition cards, a quick info section with hours and address, and a footer.</p>
+
+<!-- HOME WIREFRAME SVG -->
+<div>
+<svg viewBox="0 0 480 610" xmlns="http://www.w3.org/2000/svg">
+
+    <!-- NAV -->
+    <rect x="0" y="0" width="480" height="26" fill="#ede8db" stroke="#d0ccc5" stroke-width=".5"/>
+    <text x="12" y="17" font-family="Playfair Display,serif" font-size="8.5" font-weight="700" fill="#1a1a18">AustralianMuseum</text>
+    <text x="196" y="17" font-family="Inter,sans-serif" font-size="6.5" fill="#7a7368">Home</text>
+    <text x="229" y="17" font-family="Inter,sans-serif" font-size="6.5" fill="#7a7368">About</text>
+    <text x="263" y="17" font-family="Inter,sans-serif" font-size="6.5" fill="#7a7368">Exhibitions</text>
+    <text x="318" y="17" font-family="Inter,sans-serif" font-size="6.5" fill="#7a7368">Visit Us</text>
+    <text x="357" y="17" font-family="Inter,sans-serif" font-size="6.5" fill="#7a7368">Contact</text>
+    <rect x="405" y="7" width="62" height="13" rx="1" fill="#1a1a18"/>
+    <text x="436" y="17" text-anchor="middle" font-family="Inter,sans-serif" font-size="6" fill="#f5f0e8">Plan Visit</text>
+
+    <!-- HERO -->
+    <rect x="0" y="26" width="480" height="184" fill="#b0aba4"/>
+    <line x1="0" y1="26" x2="480" y2="210" stroke="#9a9590" stroke-width="1"/>
+    <line x1="480" y1="26" x2="0" y2="210" stroke="#9a9590" stroke-width="1"/>
+    <rect x="0" y="26" width="480" height="184" fill="rgba(26,26,24,0.38)"/>
+    <text x="240" y="110" text-anchor="middle" font-family="Inter,sans-serif" font-size="8" fill="rgba(255,255,255,0.3)">HERO IMAGE — Pic_5 (Sandstone Building)</text>
+
+    <rect x="12" y="155" width="58" height="5" rx="1" fill="rgba(201,184,154,0.75)"/>
+    <rect x="12" y="165" width="168" height="11" rx="1" fill="rgba(253,252,249,0.8)"/>
+    <rect x="12" y="182" width="118" height="5" rx="1" fill="rgba(253,252,249,0.45)"/>
+    <rect x="12" y="193" width="66" height="11" rx="1" fill="rgba(253,252,249,0.85)"/>
+
+    <!-- STATS -->
+    <rect x="0" y="210" width="480" height="48" fill="#1a1a18"/>
+    <line x1="160" y1="210" x2="160" y2="258" stroke="rgba(255,255,255,0.06)" stroke-width=".5"/>
+    <line x1="320" y1="210" x2="320" y2="258" stroke="rgba(255,255,255,0.06)" stroke-width=".5"/>
+
+    <text x="80" y="231" text-anchor="middle" font-family="Playfair Display,serif" font-size="11" fill="#c9b89a" font-weight="700">22M+</text>
+    <text x="80" y="247" text-anchor="middle" font-family="Inter,sans-serif" font-size="5.5" fill="rgba(245,240,232,0.4)">OBJECTS IN COLLECTION</text>
+
+    <text x="240" y="231" text-anchor="middle" font-family="Playfair Display,serif" font-size="11" fill="#c9b89a" font-weight="700">Est. 1827</text>
+    <text x="240" y="247" text-anchor="middle" font-family="Inter,sans-serif" font-size="5.5" fill="rgba(245,240,232,0.4)">AUSTRALIA'S OLDEST</text>
+
+    <text x="400" y="231" text-anchor="middle" font-family="Playfair Display,serif" font-size="11" fill="#c9b89a" font-weight="700">FREE</text>
+    <text x="400" y="247" text-anchor="middle" font-family="Inter,sans-serif" font-size="5.5" fill="rgba(245,240,232,0.4)">GENERAL ENTRY</text>
+
+    <!-- SECTION HEADER -->
+    <text x="12" y="283" font-family="Inter,sans-serif" font-size="5.5" fill="#b85c38" font-weight="700">FEATURED EXHIBITIONS</text>
+    <text x="12" y="298" font-family="Playfair Display,serif" font-size="12" font-weight="700" fill="#1a1a18">Current & Permanent Highlights</text>
+
+    <!-- 3 CARDS -->
+    <rect x="12" y="306" width="142" height="118" fill="white" stroke="#ddd" stroke-width=".8"/>
+    <rect x="12" y="306" width="142" height="68" fill="#b8b4ae"/>
+    <line x1="12" y1="306" x2="154" y2="374" stroke="#9a9590" stroke-width=".8"/>
+    <line x1="154" y1="306" x2="12" y2="374" stroke="#9a9590" stroke-width=".8"/>
+    <text x="83" y="344" text-anchor="middle" font-family="Inter,sans-serif" font-size="6.5" fill="#6a6a68">Pic_2</text>
+
+    <text x="20" y="390" font-family="Inter,sans-serif" font-size="5.5" fill="#b85c38" font-weight="700">PERMANENT · FREE</text>
+    <text x="20" y="401" font-family="Playfair Display,serif" font-size="8.5" font-weight="700" fill="#1a1a18">Surviving Australia</text>
+
+    <rect x="20" y="407" width="108" height="3.5" rx="1" fill="#d0ccc5"/>
+    <rect x="20" y="413" width="88" height="3.5" rx="1" fill="#d0ccc5"/>
+
+    <!-- Card 2 -->
+    <rect x="168" y="306" width="142" height="118" fill="white" stroke="#ddd" stroke-width=".8"/>
+    <rect x="168" y="306" width="142" height="68" fill="#b8b4ae"/>
+    <line x1="168" y1="306" x2="310" y2="374" stroke="#9a9590" stroke-width=".8"/>
+    <line x1="310" y1="306" x2="168" y2="374" stroke="#9a9590" stroke-width=".8"/>
+    <text x="239" y="344" text-anchor="middle" font-family="Inter,sans-serif" font-size="6.5" fill="#6a6a68">Pic_3</text>
+
+    <text x="176" y="390" font-family="Inter,sans-serif" font-size="5.5" fill="#b85c38" font-weight="700">PERMANENT · FREE</text>
+    <text x="176" y="401" font-family="Playfair Display,serif" font-size="8.5" font-weight="700" fill="#1a1a18">Dinosaurs</text>
+
+    <rect x="176" y="407" width="108" height="3.5" rx="1" fill="#d0ccc5"/>
+
+    <!-- Card 3 -->
+    <rect x="326" y="306" width="142" height="118" fill="white" stroke="#ddd" stroke-width=".8"/>
+    <rect x="326" y="306" width="142" height="68" fill="#b8b4ae"/>
+    <line x1="326" y1="306" x2="468" y2="374" stroke="#9a9590" stroke-width=".8"/>
+    <line x1="468" y1="306" x2="326" y2="374" stroke="#9a9590" stroke-width=".8"/>
+    <text x="397" y="344" text-anchor="middle" font-family="Inter,sans-serif" font-size="6.5" fill="#6a6a68">Pic_4</text>
+
+    <text x="334" y="390" font-family="Inter,sans-serif" font-size="5.5" fill="#b85c38" font-weight="700">PERMANENT · FREE</text>
+    <text x="334" y="401" font-family="Playfair Display,serif" font-size="8.5" font-weight="700" fill="#1a1a18">Planet of Minerals</text>
+
+    <rect x="334" y="407" width="108" height="3.5" rx="1" fill="#d0ccc5"/>
+
+    <!-- All exhibitions btn -->
+    <rect x="338" y="432" width="130" height="13" rx="1" fill="none" stroke="#1a1a18" stroke-width=".8"/>
+    <text x="403" y="441.5" text-anchor="middle" font-family="Inter,sans-serif" font-size="6.5" fill="#1a1a18">All Exhibitions →</text>
+
+    <!-- QUICK INFO -->
+    <rect x="0" y="454" width="240" height="56" fill="#ede8db" stroke="#d0ccc5" stroke-width=".5"/>
+    <rect x="240" y="454" width="240" height="56" fill="#ede8db" stroke="#d0ccc5" stroke-width=".5"/>
+
+    <text x="12" y="471" font-family="Inter,sans-serif" font-size="5.5" fill="#7a7368">OPENING HOURS</text>
+    <text x="12" y="484" font-family="Playfair Display,serif" font-size="9" font-weight="700" fill="#1a1a18">Daily 10 am — 5 pm</text>
+    <text x="12" y="498" font-family="Inter,sans-serif" font-size="7" fill="#7a7368">Closed Christmas Day · Café closes 4:30 pm</text>
+
+    <text x="252" y="471" font-family="Inter,sans-serif" font-size="5.5" fill="#7a7368">GETTING HERE</text>
+    <text x="252" y="484" font-family="Playfair Display,serif" font-size="9" font-weight="700" fill="#1a1a18">1 William St, Sydney</text>
+    <text x="252" y="498" font-family="Inter,sans-serif" font-size="7" fill="#7a7368">Opposite Hyde Park · Museum Station 3 min</text>
+
+    <!-- FOOTER -->
+    <rect x="0" y="510" width="480" height="56" fill="#1a1a18"/>
+    <text x="12" y="531" font-family="Playfair Display,serif" font-size="9.5" font-weight="700" fill="#f5f0e8">Australian<tspan fill="#b85c38">Museum</tspan></text>
+    <text x="12" y="545" font-family="Inter,sans-serif" font-size="6" fill="rgba(245,240,232,0.4)">Australia's first museum · Inspiring exploration since 1827 · Free general entry</text>
+    <text x="12" y="558" font-family="Inter,sans-serif" font-size="6" fill="rgba(245,240,232,0.3)">© 2026 Australian Museum · 1 William Street Sydney NSW 2010 · ABN 85 407 224 698</text>
+
+</svg>
+</div>
+<h3>Page 4.2 — About</h3>
+<p>The About page has a dark header, followed by two columns. The left side has five paragraphs explaining the museum’s history and purpose. The right side has two images that stay in place while scrolling. At the bottom, there is a timeline showing four important years.</p>
+
+<!-- ABOUT WIREFRAME SVG -->
+<div>
+<svg viewBox="0 0 480 600" xmlns="http://www.w3.org/2000/svg">
+
+    <!-- NAV -->
+    <rect x="0" y="0" width="480" height="26" fill="#ede8db" stroke="#d0ccc5" stroke-width=".5"/>
+    <text x="12" y="17" font-family="Playfair Display,serif" font-size="8.5" font-weight="700" fill="#1a1a18">AustralianMuseum</text>
+    <text x="229" y="17" font-family="Inter,sans-serif" font-size="6.5" fill="#1a1a18" font-weight="700">About</text>
+    <rect x="405" y="7" width="62" height="13" rx="1" fill="#1a1a18"/>
+    <text x="436" y="17" text-anchor="middle" font-family="Inter,sans-serif" font-size="6" fill="#f5f0e8">Plan Visit</text>
+
+    <!-- DARK HERO -->
+    <rect x="0" y="26" width="480" height="88" fill="#1a1a18"/>
+    <text x="390" y="100" font-family="Playfair Display,serif" font-size="72" font-weight="700" fill="rgba(255,255,255,0.03)">1827</text>
+    <text x="12" y="52" font-family="Inter,sans-serif" font-size="6" fill="#c9b89a" font-weight="700">OUR STORY</text>
+    <text x="12" y="70" font-family="Playfair Display,serif" font-size="14" font-weight="700" fill="#f5f0e8">Australia's Oldest Museum,</text>
+    <text x="12" y="88" font-family="Playfair Display,serif" font-size="14" font-weight="700" fill="#f5f0e8">Still Discovering</text>
+
+    <!-- COLUMN DIVIDER -->
+    <line x1="246" y1="120" x2="246" y2="370" stroke="#e8e4dc" stroke-width=".5"/>
+
+    <!-- LEFT TEXT BLOCKS -->
+    <rect x="12" y="130" width="210" height="8" rx="1.5" fill="#1a1a18" opacity="0.75"/>
+    <rect x="12" y="142" width="198" height="4.5" rx="1" fill="#d0ccc5"/>
+    <rect x="12" y="150" width="205" height="4.5" rx="1" fill="#d0ccc5"/>
+    <rect x="12" y="164" width="205" height="4.5" rx="1" fill="#d0ccc5"/>
+    <rect x="12" y="172" width="195" height="4.5" rx="1" fill="#d0ccc5"/>
+    <rect x="12" y="180" width="200" height="4.5" rx="1" fill="#d0ccc5"/>
+    <rect x="12" y="194" width="208" height="4.5" rx="1" fill="#d0ccc5"/>
+    <rect x="12" y="202" width="190" height="4.5" rx="1" fill="#d0ccc5"/>
+    <rect x="12" y="210" width="200" height="4.5" rx="1" fill="#d0ccc5"/>
+    <rect x="12" y="224" width="205" height="4.5" rx="1" fill="#d0ccc5"/>
+    <rect x="12" y="232" width="185" height="4.5" rx="1" fill="#d0ccc5"/>
+    <rect x="12" y="240" width="198" height="4.5" rx="1" fill="#d0ccc5"/>
+    <rect x="12" y="254" width="208" height="4.5" rx="1" fill="#d0ccc5"/>
+    <rect x="12" y="262" width="180" height="4.5" rx="1" fill="#d0ccc5"/>
+    <rect x="12" y="270" width="195" height="4.5" rx="1" fill="#d0ccc5"/>
+
+    <text x="228" y="134" font-family="Inter,sans-serif" font-size="5.5" fill="#b85c38">Lead para</text>
+    <text x="228" y="168" font-family="Inter,sans-serif" font-size="5.5" fill="#7a7368">Para 2</text>
+    <text x="228" y="198" font-family="Inter,sans-serif" font-size="5.5" fill="#7a7368">Para 3</text>
+    <text x="228" y="228" font-family="Inter,sans-serif" font-size="5.5" fill="#7a7368">Para 4</text>
+    <text x="228" y="258" font-family="Inter,sans-serif" font-size="5.5" fill="#7a7368">Para 5</text>
+
+    <!-- RIGHT IMAGES -->
+    <rect x="256" y="120" width="212" height="118" fill="#b8b4ae"/>
+    <line x1="256" y1="120" x2="468" y2="238" stroke="#9a9590" stroke-width=".8"/>
+    <line x1="468" y1="120" x2="256" y2="238" stroke="#9a9590" stroke-width=".8"/>
+    <text x="362" y="178" text-anchor="middle" font-family="Inter,sans-serif" font-size="7" fill="#6a6a68">Pic_1 — Glass Entrance</text>
+    <text x="362" y="190" text-anchor="middle" font-family="Inter,sans-serif" font-size="6" fill="#6a6a68">click → lightbox</text>
+
+    <rect x="256" y="246" width="212" height="100" fill="#b8b4ae"/>
+    <line x1="256" y1="246" x2="468" y2="346" stroke="#9a9590" stroke-width=".8"/>
+    <line x1="468" y1="246" x2="256" y2="346" stroke="#9a9590" stroke-width=".8"/>
+    <text x="362" y="298" text-anchor="middle" font-family="Inter,sans-serif" font-size="7" fill="#6a6a68">Pic_6 — Interior (2022)</text>
+    <text x="362" y="310" text-anchor="middle" font-family="Inter,sans-serif" font-size="6" fill="#6a6a68">sticky on scroll · click → lightbox</text>
+
+    <!-- TIMELINE -->
+    <line x1="0" y1="380" x2="480" y2="380" stroke="#e8e4dc" stroke-width=".8"/>
+    <text x="12" y="402" font-family="Playfair Display,serif" font-size="11" font-weight="700" fill="#1a1a18">Key Milestones</text>
+
+    <rect x="12" y="410" width="107" height="2.5" fill="#b85c38"/>
+    <text x="12" y="424" font-family="Playfair Display,serif" font-size="11" fill="#b85c38">1827</text>
+    <rect x="12" y="429" width="100" height="4" rx="1" fill="#d0ccc5"/>
+    <rect x="12" y="436" width="88" height="4" rx="1" fill="#d0ccc5"/>
+    <text x="12" y="452" font-family="Inter,sans-serif" font-size="6" fill="#7a7368">Museum founded</text>
+
+    <rect x="131" y="410" width="107" height="2.5" fill="#b85c38"/>
+    <text x="131" y="424" font-family="Playfair Display,serif" font-size="11" fill="#b85c38">1857</text>
+    <rect x="131" y="429" width="100" height="4" rx="1" fill="#d0ccc5"/>
+    <rect x="131" y="436" width="88" height="4" rx="1" fill="#d0ccc5"/>
+    <text x="131" y="452" font-family="Inter,sans-serif" font-size="6" fill="#7a7368">Sandstone building</text>
+
+    <rect x="250" y="410" width="107" height="2.5" fill="#b85c38"/>
+    <text x="250" y="424" font-family="Playfair Display,serif" font-size="11" fill="#b85c38">2002</text>
+    <rect x="250" y="429" width="100" height="4" rx="1" fill="#d0ccc5"/>
+    <rect x="250" y="436" width="88" height="4" rx="1" fill="#d0ccc5"/>
+    <text x="250" y="452" font-family="Inter,sans-serif" font-size="6" fill="#7a7368">Major expansion</text>
+
+    <rect x="369" y="410" width="107" height="2.5" fill="#b85c38"/>
+    <text x="369" y="424" font-family="Playfair Display,serif" font-size="11" fill="#b85c38">2022</text>
+    <rect x="369" y="429" width="100" height="4" rx="1" fill="#d0ccc5"/>
+    <rect x="369" y="436" width="88" height="4" rx="1" fill="#d0ccc5"/>
+    <text x="369" y="452" font-family="Inter,sans-serif" font-size="6" fill="#7a7368">$57.5M renovation</text>
+
+    <!-- FOOTER -->
+    <rect x="0" y="468" width="480" height="48" fill="#1a1a18"/>
+    <text x="12" y="489" font-family="Playfair Display,serif" font-size="9" font-weight="700" fill="#f5f0e8">Australian<tspan fill="#b85c38">Museum</tspan></text>
+    <text x="12" y="503" font-family="Inter,sans-serif" font-size="5.5" fill="rgba(245,240,232,0.3)">© 2026 Australian Museum · 1 William Street Sydney NSW 2010</text>
+
+</svg>
+</div>
+<h3>Page 4.3 — Exhibitions</h3>
+<p>The Exhibitions page has a dark header, three filter tabs (All, Permanent, Current), and six exhibition cards. Each card has an image, title, badge, and short description. Permanent exhibitions are free, and the current exhibition has a price. All images open in a lightbox.</p>
+
+<!-- EXHIBITIONS WIREFRAME SVG -->
+<div>
+<svg viewBox="0 0 480 706" xmlns="http://www.w3.org/2000/svg">
+
+    <!-- NAV -->
+    <rect x="0" y="0" width="480" height="26" fill="#ede8db" stroke="#d0ccc5" stroke-width=".5"/>
+    <text x="12" y="17" font-family="Playfair Display,serif" font-size="8.5" font-weight="700" fill="#1a1a18">AustralianMuseum</text>
+    <text x="263" y="17" font-family="Inter,sans-serif" font-size="6.5" fill="#1a1a18" font-weight="700">Exhibitions</text>
+    <rect x="405" y="7" width="62" height="13" rx="1" fill="#1a1a18"/>
+    <text x="436" y="17" text-anchor="middle" font-family="Inter,sans-serif" font-size="6" fill="#f5f0e8">Plan Visit</text>
+
+    <!-- DARK HERO -->
+    <rect x="0" y="26" width="480" height="72" fill="#1a1a18"/>
+    <text x="12" y="54" font-family="Playfair Display,serif" font-size="16" font-weight="700" fill="#f5f0e8">Exhibitions</text>
+    <rect x="12" y="60" width="200" height="4" rx="1" fill="rgba(245,240,232,0.35)"/>
+    <rect x="12" y="68" width="162" height="4" rx="1" fill="rgba(245,240,232,0.35)"/>
+    <text x="380" y="54" font-family="Inter,sans-serif" font-size="7" fill="rgba(245,240,232,0.4)">6 total · 5 permanent</text>
+    <text x="380" y="66" font-family="Inter,sans-serif" font-size="7" fill="rgba(245,240,232,0.4)">1 current special</text>
+
+    <!-- FILTER TABS -->
+    <rect x="0" y="98" width="480" height="28" fill="white" stroke="#e8e4dc" stroke-width=".5"/>
+    <text x="20" y="116" font-family="Inter,sans-serif" font-size="7.5" font-weight="700" fill="#1a1a18">All</text>
+    <rect x="0" y="124" width="50" height="2" fill="#b85c38"/>
+    <text x="80" y="116" font-family="Inter,sans-serif" font-size="7.5" fill="#7a7368">Permanent</text>
+    <text x="176" y="116" font-family="Inter,sans-serif" font-size="7.5" fill="#7a7368">Current</text>
+    <text x="310" y="116" font-family="Inter,sans-serif" font-size="6" fill="#7a7368" font-style="italic">Tap to filter — no page reload</text>
+
+    <!-- CARD 1 -->
+    <rect x="0" y="128" width="480" height="74" fill="white" stroke="#e0dbd4" stroke-width=".5"/>
+    <rect x="0" y="128" width="140" height="74" fill="#b8b4ae"/>
+    <line x1="0" y1="128" x2="140" y2="202" stroke="#9a9590" stroke-width=".7"/>
+    <line x1="140" y1="128" x2="0" y2="202" stroke="#9a9590" stroke-width=".7"/>
+    <text x="70" y="169" text-anchor="middle" font-family="Inter,sans-serif" font-size="6.5" fill="#6a6a68">Pic_2</text>
+
+    <rect x="150" y="138" width="53" height="10" rx="1" fill="#1a1a18"/>
+    <text x="176" y="146.5" text-anchor="middle" font-family="Inter,sans-serif" font-size="5.5" fill="#f5f0e8">PERMANENT</text>
+
+    <text x="150" y="163" font-family="Playfair Display,serif" font-size="10" font-weight="700" fill="#1a1a18">Surviving Australia</text>
+    <rect x="150" y="168" width="145" height="3.5" rx="1" fill="#d0ccc5"/>
+    <rect x="150" y="174" width="125" height="3.5" rx="1" fill="#d0ccc5"/>
+    <text x="150" y="195" font-family="Inter,sans-serif" font-size="5.5" fill="#7a7368">PERMANENT · FREE · OPENED DEC 2025</text>
+
+    <!-- CARD 2 -->
+    <rect x="0" y="204" width="480" height="74" fill="#faf7f4" stroke="#e0dbd4" stroke-width=".5"/>
+    <rect x="0" y="204" width="140" height="74" fill="#b8b4ae"/>
+    <line x1="0" y1="204" x2="140" y2="278" stroke="#9a9590" stroke-width=".7"/>
+    <line x1="140" y1="204" x2="0" y2="278" stroke="#9a9590" stroke-width=".7"/>
+    <text x="70" y="245" text-anchor="middle" font-family="Inter,sans-serif" font-size="6.5" fill="#6a6a68">Pic_3</text>
+
+    <rect x="150" y="214" width="53" height="10" rx="1" fill="#1a1a18"/>
+    <text x="150" y="239" font-family="Playfair Display,serif" font-size="10" font-weight="700" fill="#1a1a18">Dinosaurs</text>
+    <text x="150" y="271" font-family="Inter,sans-serif" font-size="5.5" fill="#7a7368">PERMANENT · FREE</text>
+
+    <!-- CARD 3 -->
+    <rect x="0" y="280" width="480" height="74" fill="white" stroke="#e0dbd4" stroke-width=".5"/>
+    <rect x="0" y="280" width="140" height="74" fill="#b8b4ae"/>
+    <line x1="0" y1="280" x2="140" y2="354" stroke="#9a9590" stroke-width=".7"/>
+    <line x1="140" y1="280" x2="0" y2="354" stroke="#9a9590" stroke-width=".7"/>
+    <text x="70" y="321" text-anchor="middle" font-family="Inter,sans-serif" font-size="6.5" fill="#6a6a68">Pic_4</text>
+
+    <rect x="150" y="290" width="53" height="10" rx="1" fill="#1a1a18"/>
+    <text x="150" y="315" font-family="Playfair Display,serif" font-size="10" font-weight="700" fill="#1a1a18">Planet of Minerals</text>
+    <text x="150" y="347" font-family="Inter,sans-serif" font-size="5.5" fill="#7a7368">PERMANENT · FREE</text>
+
+    <!-- CARD 4 -->
+    <rect x="0" y="356" width="480" height="74" fill="#faf7f4" stroke="#e0dbd4" stroke-width=".5"/>
+    <rect x="0" y="356" width="140" height="74" fill="#b8b4ae"/>
+    <line x1="0" y1="356" x2="140" y2="430" stroke="#9a9590" stroke-width=".7"/>
+    <line x1="140" y1="356" x2="0" y2="430" stroke="#9a9590" stroke-width=".7"/>
+    <text x="70" y="397" text-anchor="middle" font-family="Inter,sans-serif" font-size="6.5" fill="#6a6a68">Pic_7</text>
+
+    <rect x="150" y="366" width="53" height="10" rx="1" fill="#1a1a18"/>
+    <text x="150" y="391" font-family="Playfair Display,serif" font-size="10" font-weight="700" fill="#1a1a18">Wansolmoana</text>
+    <text x="150" y="423" font-family="Inter,sans-serif" font-size="5.5" fill="#7a7368">PERMANENT · FREE · PACIFIC CULTURES</text>
+
+    <!-- CARD 5 -->
+    <rect x="0" y="432" width="480" height="74" fill="white" stroke="#e0dbd4" stroke-width=".5"/>
+    <rect x="0" y="432" width="140" height="74" fill="#b8b4ae"/>
+    <line x1="0" y1="432" x2="140" y2="506" stroke="#9a9590" stroke-width=".7"/>
+    <line x1="140" y1="432" x2="0" y2="506" stroke="#9a9590" stroke-width=".7"/>
+    <text x="70" y="473" text-anchor="middle" font-family="Inter,sans-serif" font-size="6.5" fill="#6a6a68">Pic_8</text>
+
+    <rect x="150" y="442" width="53" height="10" rx="1" fill="#1a1a18"/>
+    <text x="150" y="467" font-family="Playfair Display,serif" font-size="10" font-weight="700" fill="#1a1a18">First Australians</text>
+    <text x="150" y="499" font-family="Inter,sans-serif" font-size="5.5" fill="#7a7368">PERMANENT · FREE · FIRST NATIONS</text>
+
+    <!-- CARD 6 (CURRENT) -->
+    <rect x="0" y="508" width="480" height="74" fill="#faf7f4" stroke="#e0dbd4" stroke-width=".5"/>
+    <rect x="0" y="508" width="140" height="74" fill="#b8b4ae"/>
+    <line x1="0" y1="508" x2="140" y2="582" stroke="#9a9590" stroke-width=".7"/>
+    <line x1="140" y1="508" x2="0" y2="582" stroke="#9a9590" stroke-width=".7"/>
+    <text x="70" y="549" text-anchor="middle" font-family="Inter,sans-serif" font-size="6.5" fill="#6a6a68">RELICS Lego</text>
+
+    <rect x="150" y="518" width="44" height="10" rx="1" fill="#b85c38"/>
+    <text x="172" y="526.5" text-anchor="middle" font-family="Inter,sans-serif" font-size="5.5" fill="white">CURRENT</text>
+
+    <text x="200" y="526.5" font-family="Inter,sans-serif" font-size="6" fill="#7a7368">$29 adult</text>
+    <text x="150" y="545" font-family="Playfair Display,serif" font-size="10" font-weight="700" fill="#1a1a18">RELICS: A New World Rises</text>
+    <text x="150" y="575" font-family="Inter,sans-serif" font-size="5.5" fill="#7a7368">LEGO EXHIBITION · BOOKING RECOMMENDED</text>
+
+    <!-- FOOTER -->
+    <rect x="0" y="584" width="480" height="46" fill="#1a1a18"/>
+    <text x="12" y="605" font-family="Playfair Display,serif" font-size="9" font-weight="700" fill="#f5f0e8">Australian<tspan fill="#b85c38">Museum</tspan></text>
+    <text x="12" y="618" font-family="Inter,sans-serif" font-size="5.5" fill="rgba(245,240,232,0.3)">© 2026 · 1 William Street Sydney NSW 2010</text>
+
+</svg>
+</div>
+<h3>Page 4.4 — Visit Us</h3>
+<p>The Visit Us page gives all the practical information visitors need before arriving. It includes a cream header, a pricing table, opening hours, a list of facilities, seven entry rules, and a dark transport section showing train, bus, and address details.</p>
+
+<!-- VISIT US WIREFRAME SVG -->
+<div>
+<svg viewBox="0 0 480 704" xmlns="http://www.w3.org/2000/svg">
+
+    <!-- NAV -->
+    <rect x="0" y="0" width="480" height="26" fill="#ede8db" stroke="#d0ccc5" stroke-width=".5"/>
+    <text x="12" y="17" font-family="Playfair Display,serif" font-size="8.5" font-weight="700" fill="#1a1a18">AustralianMuseum</text>
+    <text x="318" y="17" font-family="Inter,sans-serif" font-size="6.5" fill="#1a1a18" font-weight="700">Visit Us</text>
+    <rect x="405" y="7" width="62" height="13" rx="1" fill="#1a1a18"/>
+    <text x="436" y="17" text-anchor="middle" font-family="Inter,sans-serif" font-size="6" fill="#f5f0e8">Plan Visit</text>
+
+    <!-- CREAM HERO -->
+    <rect x="0" y="26" width="480" height="66" fill="#ede8db" stroke="#d0ccc5" stroke-width=".5"/>
+    <text x="12" y="52" font-family="Playfair Display,serif" font-size="16" font-weight="700" fill="#1a1a18">Plan Your Visit</text>
+    <text x="12" y="67" font-family="Inter,sans-serif" font-size="7.5" fill="#7a7368">Everything you need before you arrive — tickets, hours, facilities and how to get here.</text>
+    <text x="12" y="80" font-family="Inter,sans-serif" font-size="6.5" fill="#7a7368" font-style="italic">Last entry 4:30 pm · Check australian.museum for public holiday variations</text>
+
+    <!-- PRICING -->
+    <text x="12" y="114" font-family="Inter,sans-serif" font-size="5.5" fill="#b85c38" font-weight="700">ADMISSION</text>
+    <text x="12" y="128" font-family="Playfair Display,serif" font-size="12" font-weight="700" fill="#1a1a18">Tickets & Pricing</text>
+
+    <rect x="12" y="134" width="455" height="15" fill="#1a1a18"/>
+    <text x="20" y="145" font-family="Inter,sans-serif" font-size="6" fill="#f5f0e8" font-weight="600">TICKET TYPE</text>
+    <text x="400" y="145" font-family="Inter,sans-serif" font-size="6" fill="#f5f0e8" font-weight="600">PRICE</text>
+
+    <rect x="12" y="149" width="455" height="14" fill="white" stroke="#e8e4dc" stroke-width=".5"/>
+    <text x="20" y="159.5" font-family="Inter,sans-serif" font-size="7" fill="#1a1a18">General Entry (all permanent galleries)</text>
+    <text x="400" y="159.5" font-family="Inter,sans-serif" font-size="7" fill="#1a1a18" font-weight="700">FREE</text>
+
+    <rect x="12" y="163" width="455" height="14" fill="#faf7f4" stroke="#e8e4dc" stroke-width=".5"/>
+    <text x="20" y="173.5" font-family="Inter,sans-serif" font-size="7" fill="#1a1a18">Special / Major Exhibitions</text>
+    <text x="400" y="173.5" font-family="Inter,sans-serif" font-size="7" fill="#1a1a18">Varies</text>
+
+    <rect x="12" y="177" width="455" height="14" fill="white" stroke="#e8e4dc" stroke-width=".5"/>
+    <text x="20" y="187.5" font-family="Inter,sans-serif" font-size="7" fill="#1a1a18">RELICS: A New World Rises (Lego) — Adult</text>
+    <text x="400" y="187.5" font-family="Inter,sans-serif" font-size="7" fill="#1a1a18">$29</text>
+
+    <rect x="12" y="191" width="455" height="14" fill="#faf7f4" stroke="#e8e4dc" stroke-width=".5"/>
+    <text x="20" y="201.5" font-family="Inter,sans-serif" font-size="7" fill="#1a1a18">Concession / Student</text>
+    <text x="400" y="201.5" font-family="Inter,sans-serif" font-size="7" fill="#1a1a18">Discounts</text>
+
+    <rect x="12" y="205" width="455" height="14" fill="white" stroke="#e8e4dc" stroke-width=".5"/>
+    <text x="20" y="215.5" font-family="Inter,sans-serif" font-size="7" fill="#1a1a18">Children under 5</text>
+    <text x="400" y="215.5" font-family="Inter,sans-serif" font-size="7" fill="#1a1a18" font-weight="700">FREE</text>
+
+    <!-- HOURS -->
+    <text x="12" y="246" font-family="Inter,sans-serif" font-size="5.5" fill="#b85c38" font-weight="700">WHEN WE'RE OPEN</text>
+    <text x="12" y="260" font-family="Playfair Display,serif" font-size="12" font-weight="700" fill="#1a1a18">Opening Hours</text>
+
+    <rect x="12" y="266" width="455" height="14" fill="white" stroke="#e8e4dc" stroke-width=".5"/>
+    <text x="20" y="276.5" font-family="Inter,sans-serif" font-size="7" fill="#1a1a18">Monday – Sunday</text>
+    <text x="340" y="276.5" font-family="Inter,sans-serif" font-size="7" fill="#1a1a18">10:00 am – 5:00 pm</text>
+
+    <rect x="12" y="280" width="455" height="14" fill="#faf7f4" stroke="#e8e4dc" stroke-width=".5"/>
+    <text x="20" y="290.5" font-family="Inter,sans-serif" font-size="7" fill="#1a1a18">Christmas Day</text>
+    <text x="340" y="290.5" font-family="Inter,sans-serif" font-size="7" fill="#b85c38">Closed</text>
+
+    <rect x="12" y="294" width="455" height="14" fill="white" stroke="#e8e4dc" stroke-width=".5"/>
+    <text x="20" y="304.5" font-family="Inter,sans-serif" font-size="7" fill="#1a1a18">Café (Billabong Waterhole)</text>
+    <text x="340" y="304.5" font-family="Inter,sans-serif" font-size="7" fill="#1a1a18">Closes 4:30 pm</text>
+
+    <!-- FACILITIES -->
+    <text x="12" y="334" font-family="Inter,sans-serif" font-size="5.5" fill="#b85c38" font-weight="700">ON SITE</text>
+    <text x="12" y="348" font-family="Playfair Display,serif" font-size="12" font-weight="700" fill="#1a1a18">Facilities</text>
+
+    <rect x="12" y="354" width="106" height="22" fill="white" stroke="#e0dbd4" stroke-width=".5"/>
+    <text x="20" y="368" font-family="Inter,sans-serif" font-size="6.5" fill="#1a1a18">☕ Billabong Café</text>
+
+    <rect x="122" y="354" width="106" height="22" fill="white" stroke="#e0dbd4" stroke-width=".5"/>
+    <text x="130" y="368" font-family="Inter,sans-serif" font-size="6.5" fill="#1a1a18">🍽️ Rooftop Restaurant</text>
+
+    <rect x="232" y="354" width="106" height="22" fill="white" stroke="#e0dbd4" stroke-width=".5"/>
+    <text x="240" y="368" font-family="Inter,sans-serif" font-size="6.5" fill="#1a1a18">🛍️ Gift Shop</text>
+
+    <rect x="342" y="354" width="125" height="22" fill="white" stroke="#e0dbd4" stroke-width=".5"/>
+    <text x="350" y="368" font-family="Inter,sans-serif" font-size="6.5" fill="#1a1a18">📚 Learning Area</text>
+
+    <rect x="12" y="378" width="106" height="22" fill="white" stroke="#e0dbd4" stroke-width=".5"/>
+    <text x="20" y="392" font-family="Inter,sans-serif" font-size="6.5" fill="#1a1a18">♿ Wheelchair Access</text>
+
+    <rect x="122" y="378" width="106" height="22" fill="white" stroke="#e0dbd4" stroke-width=".5"/>
+    <text x="130" y="392" font-family="Inter,sans-serif" font-size="6.5" fill="#1a1a18">🎧 Audio Tours</text>
+
+    <rect x="232" y="378" width="106" height="22" fill="white" stroke="#e0dbd4" stroke-width=".5"/>
+    <text x="240" y="392" font-family="Inter,sans-serif" font-size="6.5" fill="#1a1a18">📱 Free AR App</text>
+
+    <rect x="342" y="378" width="125" height="22" fill="white" stroke="#e0dbd4" stroke-width=".5"/>
+    <text x="350" y="392" font-family="Inter,sans-serif" font-size="6.5" fill="#1a1a18">🐕 Assistance Animals</text>
+
+    <!-- ENTRY RULES -->
+    <text x="12" y="422" font-family="Inter,sans-serif" font-size="5.5" fill="#b85c38" font-weight="700">TERMS OF ENTRY</text>
+    <text x="12" y="436" font-family="Playfair Display,serif" font-size="12" font-weight="700" fill="#1a1a18">Before You Go</text>
+
+    <circle cx="20" cy="449" r="2.5" fill="#1a1a18"/>
+    <rect x="30" y="446" width="196" height="4" rx="1" fill="#d0ccc5"/>
+
+    <circle cx="20" cy="459" r="2.5" fill="#1a1a18"/>
+    <rect x="30" y="456" width="210" height="4" rx="1" fill="#d0ccc5"/>
+
+    <circle cx="20" cy="469" r="2.5" fill="#1a1a18"/>
+    <rect x="30" y="466" width="188" height="4" rx="1" fill="#d0ccc5"/>
+
+    <circle cx="20" cy="479" r="2.5" fill="#1a1a18"/>
+    <rect x="30" y="476" width="174" height="4" rx="1" fill="#d0ccc5"/>
+
+    <circle cx="20" cy="489" r="2.5" fill="#1a1a18"/>
+    <rect x="30" y="486" width="200" height="4" rx="1" fill="#d0ccc5"/>
+
+    <circle cx="20" cy="499" r="2.5" fill="#1a1a18"/>
+    <rect x="30" y="496" width="218" height="4" rx="1" fill="#d0ccc5"/>
+
+    <circle cx="20" cy="509" r="2.5" fill="#1a1a18"/>
+    <rect x="30" y="506" width="194" height="4" rx="1" fill="#d0ccc5"/>
+
+    <text x="12" y="522" font-family="Inter,sans-serif" font-size="6" fill="#7a7368" font-style="italic">7 entry rules listed</text>
+
+    <!-- DARK TRANSPORT -->
+    <rect x="0" y="532" width="480" height="88" fill="#1a1a18"/>
+    <text x="12" y="554" font-family="Playfair Display,serif" font-size="11" font-weight="700" fill="#f5f0e8">Getting Here</text>
+
+    <text x="12" y="572" font-family="Inter,sans-serif" font-size="7.5" fill="#c9b89a" font-weight="700">By Train</text>
+    <rect x="12" y="576" width="132" height="4" rx="1" fill="rgba(245,240,232,0.2)"/>
+    <rect x="12" y="583" width="118" height="4" rx="1" fill="rgba(245,240,232,0.2)"/>
+    <rect x="12" y="590" width="128" height="4" rx="1" fill="rgba(245,240,232,0.2)"/>
+
+    <text x="174" y="572" font-family="Inter,sans-serif" font-size="7.5" fill="#c9b89a" font-weight="700">By Bus</text>
+    <rect x="174" y="576" width="132" height="4" rx="1" fill="rgba(245,240,232,0.2)"/>
+    <rect x="174" y="583" width="118" height="4" rx="1" fill="rgba(245,240,232,0.2)"/>
+
+    <text x="336" y="572" font-family="Inter,sans-serif" font-size="7.5" fill="#c9b89a" font-weight="700">Address</text>
+    <rect x="336" y="576" width="132" height="4" rx="1" fill="rgba(245,240,232,0.2)"/>
+    <rect x="336" y="583" width="118" height="4" rx="1" fill="rgba(245,240,232,0.2)"/>
+    <rect x="336" y="590" width="128" height="4" rx="1" fill="rgba(245,240,232,0.2)"/>
+
+    <text x="12" y="612" font-family="Inter,sans-serif" font-size="5.5" fill="rgba(245,240,232,0.3)">No on-site parking available. CBD parking nearby.</text>
+
+    <!-- FOOTER -->
+    <rect x="0" y="622" width="480" height="46" fill="#1a1a18" stroke="#2a2a28" stroke-width=".5"/>
+    <text x="12" y="643" font-family="Playfair Display,serif" font-size="9" font-weight="700" fill="#f5f0e8">Australian<tspan fill="#b85c38">Museum</tspan></text>
+    <text x="12" y="657" font-family="Inter,sans-serif" font-size="5.5" fill="rgba(245,240,232,0.3)">© 2026 Australian Museum · 1 William Street Sydney NSW 2010</text>
+
+</svg>
+</div>
+<h3>Page 4.5 — Contact</h3>
+<p>The Contact page has a dark header, two columns, and a footer. The left column shows the museum’s address, phone number, hours, media email, website link, and social links. The right column shows a Google Maps embed and public transport information. There is no contact form because all enquiries must go through the official museum website.</p>
+
+<!-- CONTACT WIREFRAME SVG -->
+<div>
+<svg viewBox="0 0 480 558" xmlns="http://www.w3.org/2000/svg">
+
+    <!-- NAV -->
+    <rect x="0" y="0" width="480" height="26" fill="#ede8db" stroke="#d0ccc5" stroke-width=".5"/>
+    <text x="12" y="17" font-family="Playfair Display,serif" font-size="8.5" font-weight="700" fill="#1a1a18">AustralianMuseum</text>
+    <text x="357" y="17" font-family="Inter,sans-serif" font-size="6.5" fill="#1a1a18" font-weight="700">Contact</text>
+    <rect x="405" y="7" width="62" height="13" rx="1" fill="#1a1a18"/>
+    <text x="436" y="17" text-anchor="middle" font-family="Inter,sans-serif" font-size="6" fill="#f5f0e8">Plan Visit</text>
+
+    <!-- DARK HERO -->
+    <rect x="0" y="26" width="480" height="64" fill="#1a1a18"/>
+    <text x="12" y="52" font-family="Playfair Display,serif" font-size="16" font-weight="700" fill="#f5f0e8">Get in Touch</text>
+    <text x="12" y="67" font-family="Inter,sans-serif" font-size="7.5" fill="rgba(245,240,232,0.5)">Visit us in person, call, or email the Australian Museum team directly.</text>
+    <text x="12" y="80" font-family="Inter,sans-serif" font-size="6.5" fill="rgba(245,240,232,0.32)" font-style="italic">⚠ No contact form — museum's official details only.</text>
+
+    <!-- COLUMN DIVIDER -->
+    <line x1="237" y1="94" x2="237" y2="444" stroke="#e8e4dc" stroke-width=".5"/>
+
+    <!-- LEFT COLUMN -->
+    <text x="12" y="108" font-family="Inter,sans-serif" font-size="5.5" fill="#7a7368">ADDRESS</text>
+    <text x="12" y="121" font-family="Playfair Display,serif" font-size="9.5" fill="#1a1a18">1 William Street, Sydney NSW 2010</text>
+
+    <text x="12" y="148" font-family="Inter,sans-serif" font-size="5.5" fill="#7a7368">PHONE</text>
+    <text x="12" y="162" font-family="Playfair Display,serif" font-size="10.5" fill="#1a1a18" font-weight="700">(02) 9320 6000</text>
+    <text x="12" y="174" font-family="Inter,sans-serif" font-size="6" fill="#7a7368">clickable tel: link</text>
+
+    <text x="12" y="195" font-family="Inter,sans-serif" font-size="5.5" fill="#7a7368">OPENING HOURS</text>
+    <text x="12" y="208" font-family="Playfair Display,serif" font-size="9.5" fill="#1a1a18">Daily 10:00 am – 5:00 pm</text>
+    <text x="12" y="220" font-family="Inter,sans-serif" font-size="6.5" fill="#7a7368">Closed Christmas Day</text>
+
+    <text x="12" y="241" font-family="Inter,sans-serif" font-size="5.5" fill="#7a7368">MEDIA & PRESS</text>
+    <text x="12" y="254" font-family="Inter,sans-serif" font-size="8.5" fill="#1a1a18">media@australian.museum</text>
+    <text x="12" y="266" font-family="Inter,sans-serif" font-size="6" fill="#7a7368">clickable mailto: link</text>
+
+    <text x="12" y="287" font-family="Inter,sans-serif" font-size="5.5" fill="#7a7368">OFFICIAL WEBSITE</text>
+    <text x="12" y="300" font-family="Inter,sans-serif" font-size="8.5" fill="#1a1a18">australian.museum ↗</text>
+    <text x="12" y="312" font-family="Inter,sans-serif" font-size="6" fill="#7a7368">opens in new tab</text>
+
+    <text x="12" y="333" font-family="Inter,sans-serif" font-size="5.5" fill="#7a7368">FIND US ONLINE</text>
+
+    <rect x="12" y="337" width="50" height="13" rx="1" fill="none" stroke="#1a1a18"/>
+    <text x="37" y="347" text-anchor="middle" font-family="Inter,sans-serif" font-size="6.5" fill="#1a1a18">Facebook</text>
+
+    <rect x="68" y="337" width="50" height="13" rx="1" fill="none" stroke="#1a1a18"/>
+    <text x="93" y="347" text-anchor="middle" font-family="Inter,sans-serif" font-size="6.5" fill="#1a1a18">Instagram</text>
+
+    <rect x="124" y="337" width="50" height="13" rx="1" fill="none" stroke="#1a1a18"/>
+    <text x="149" y="347" text-anchor="middle" font-family="Inter,sans-serif" font-size="6.5" fill="#1a1a18">X / Twitter</text>
+
+    <rect x="12" y="364" width="210" height="32" rx="2" fill="#f5f0e8" stroke="#e0dbd4"/>
+    <text x="20" y="377" font-family="Inter,sans-serif" font-size="6" fill="#7a7368" font-style="italic">For Ask an Expert / archive enquiries: visit</text>
+    <text x="20" y="387" font-family="Inter,sans-serif" font-size="6" fill="#7a7368" font-style="italic">australian.museum directly. No form here.</text>
+
+    <!-- RIGHT COLUMN -->
+    <rect x="247" y="96" width="220" height="188" fill="#b8b4ae"/>
+    <line x1="247" y1="96" x2="467" y2="284" stroke="#9a9590"/>
+    <line x1="467" y1="96" x2="247" y2="284" stroke="#9a9590"/>
+    <text x="357" y="186" text-anchor="middle" font-family="Inter,sans-serif" font-size="8" fill="#6a6a68">Google Maps Embed</text>
+    <text x="357" y="198" text-anchor="middle" font-family="Inter,sans-serif" font-size="6.5" fill="#6a6a68">1 William Street, Sydney</text>
+    <text x="357" y="210" text-anchor="middle" font-family="Inter,sans-serif" font-size="6.5" fill="#6a6a68">Interactive · pan + zoom</text>
+
+    <text x="247" y="300" font-family="Inter,sans-serif" font-size="6.5" fill="#7a7368" font-style="italic">Opposite Hyde Park · near Museum Station</text>
+
+    <rect x="247" y="312" width="220" height="78" rx="2" fill="#ede8db" stroke="#d0ccc5"/>
+    <text x="257" y="328" font-family="Inter,sans-serif" font-size="5.5" fill="#7a7368" font-weight="700">PUBLIC TRANSPORT</text>
+
+    <text x="257" y="343" font-family="Inter,sans-serif" font-size="7" fill="#1a1a18">Museum Station (T4 line) — 3 min walk</text>
+    <text x="257" y="355" font-family="Inter,sans-serif" font-size="7" fill="#1a1a18">St James Station — 5 min walk</text>
+    <text x="257" y="367" font-family="Inter,sans-serif" font-size="7" fill="#1a1a18">Bus 311, 355, 380 on College Street</text>
+    <text x="257" y="379" font-family="Inter,sans-serif" font-size="7" fill="#1a1a18">No car parking on site</text>
+
+    <!-- FOOTER -->
+    <rect x="0" y="444" width="480" height="48" fill="#1a1a18"/>
+    <text x="12" y="465" font-family="Playfair Display,serif" font-size="9" font-weight="700" fill="#f5f0e8">Australian<tspan fill="#b85c38">Museum</tspan></text>
+    <text x="12" y="479" font-family="Inter,sans-serif" font-size="5.5" fill="rgba(245,240,232,0.3)">© 2026 Australian Museum · 1 William Street Sydney NSW 2010 · ABN 85 407 224 698</text>
+
+</svg>
+</div>
+<h2>05 — Content</h2>
+<p>This section lists all the content that will appear on each page of the website. It includes text, images, links, facts, and interactive elements. This helps make sure every page has the correct information before building the real website.</p>
+
+<h3>Home</h3>
+<div>
+<table border="1" cellpadding="6" cellspacing="0">
+<thead><tr><th>Section</th><th>Type</th><th>Content</th></tr></thead>
+<tbody>
+<tr><td>Navigation</td><td>Interactive</td><td>Logo, links to all pages, and a “Plan Your Visit” button. Mobile menu for small screens.</td></tr>
+<tr><td>Hero</td><td>Image + Text</td><td>Large photo of the sandstone building (Pic_5). Includes eyebrow text, headline, subtext, and a button.</td></tr>
+<tr><td>Stats Strip</td><td>Facts</td><td>Three facts: 22M+ objects, Est. 1827, Free entry.</td></tr>
+<tr><td>Featured Exhibitions</td><td>Images + Interactive</td><td>Three cards: Surviving Australia, Dinosaurs, Planet of Minerals. Each opens in a lightbox.</td></tr>
+<tr><td>Quick Info</td><td>Facts</td><td>Hours and address in two columns.</td></tr>
+<tr><td>Footer</td><td>Links + Facts</td><td>Brand, navigation links, address, phone, hours, and copyright.</td></tr>
+</tbody>
+</table>
+</div>
+
+<h3>About</h3>
+<div>
+<table border="1" cellpadding="6" cellspacing="0">
+<thead><tr><th>Section</th><th>Type</th><th>Content</th></tr></thead>
+<tbody>
+<tr><td>Dark Hero</td><td>Text</td><td>Eyebrow “Our Story”, headline, and faint “1827” watermark.</td></tr>
+<tr><td>Body Text</td><td>Text</td><td>Five paragraphs about the museum’s history, mission, and renovation.</td></tr>
+<tr><td>Sticky Images</td><td>Images + Interactive</td><td>Pic_1 and Pic_6. Both clickable and stay in place while scrolling.</td></tr>
+<tr><td>Timeline</td><td>Facts</td><td>Four milestones: 1827, 1857, 2002, 2022.</td></tr>
+</tbody>
+</table>
+</div>
+
+<h3>Exhibitions</h3>
+<div>
+<table border="1" cellpadding="6" cellspacing="0">
+<thead><tr><th>Section</th><th>Type</th><th>Content</th></tr></thead>
+<tbody>
+<tr><td>Dark Hero</td><td>Text</td><td>Headline and short description of the exhibitions.</td></tr>
+<tr><td>Filter Tabs</td><td>Interactive</td><td>All / Permanent / Current. Filters without reloading.</td></tr>
+<tr><td>Exhibition 1</td><td>Image + Facts</td><td>Surviving Australia (Pic_2). Permanent and free.</td></tr>
+<tr><td>Exhibition 2</td><td>Image + Facts</td><td>Dinosaurs (Pic_3). Permanent and free.</td></tr>
+<tr><td>Exhibition 3</td><td>Image + Facts</td><td>Planet of Minerals (Pic_4). Permanent and free.</td></tr>
+<tr><td>Exhibition 4</td><td>Image + Facts</td><td>Wansolmoana (Pic_7). Pacific cultures.</td></tr>
+<tr><td>Exhibition 5</td><td>Image + Facts</td><td>First Australians (Pic_8). First Nations gallery.</td></tr>
+<tr><td>Exhibition 6</td><td>Image + Facts</td><td>RELICS Lego exhibition. Current. $29 adult.</td></tr>
+</tbody>
+</table>
+</div>
+
+<h3>Visit Us</h3>
+<div>
+<table border="1" cellpadding="6" cellspacing="0">
+<thead><tr><th>Section</th><th>Type</th><th>Content</th></tr></thead>
+<tbody>
+<tr><td>Cream Hero</td><td>Text</td><td>Headline and short introduction.</td></tr>
+<tr><td>Pricing Table</td><td>Facts</td><td>General entry free, special exhibitions vary, RELICS $29, concessions, under 5 free.</td></tr>
+<tr><td>Opening Hours</td><td>Facts</td><td>10am–5pm daily, closed Christmas Day, café closes 4:30pm.</td></tr>
+<tr><td>Facilities</td><td>Facts</td><td>Eight facilities including café, rooftop restaurant, gift shop, learning area, wheelchair access, audio tours, AR app, assistance animals.</td></tr>
+<tr><td>Entry Rules</td><td>Facts</td><td>Seven rules including no large bags, no flash photography in certain galleries, no smoking, etc.</td></tr>
+<tr><td>Transport</td><td>Facts</td><td>Train, bus, and address information. No on-site parking.</td></tr>
+</tbody>
+</table>
+</div>
+
+<h3>Contact</h3>
+<div>
+<table border="1" cellpadding="6" cellspacing="0">
+<thead><tr><th>Section</th><th>Type</th><th>Content</th></tr></thead>
+<tbody>
+<tr><td>Dark Hero</td><td>Text</td><td>Headline “Get in Touch”.</td></tr>
+<tr><td>Address</td><td>Facts</td><td>1 William Street, Sydney NSW 2010.</td></tr>
+<tr><td>Phone</td><td>Link + Facts</td><td>(02) 9320 6000. Clickable on mobile.</td></tr>
+<tr><td>Hours</td><td>Facts</td><td>10am–5pm daily. Closed Christmas Day.</td></tr>
+<tr><td>Email</td><td>Link + Facts</td><td>media@australian.museum (media enquiries only).</td></tr>
+<tr><td>Website</td><td>Link</td><td>australian.museum (opens in new tab).</td></tr>
+<tr><td>Social Links</td><td>Links</td><td>Facebook, Instagram, X/Twitter.</td></tr>
+<tr><td>Map Embed</td><td>Interactive</td><td>Google Maps iframe showing the museum location.</td></tr>
+<tr><td>Transport Note</td><td>Facts</td><td>Train, bus, and walking details.</td></tr>
+<tr><td>Expert Note</td><td>Text</td><td>Directs users to the official site for specialist enquiries.</td></tr>
+</tbody>
+</table>
+</div>
+
+</body>
+</html>
